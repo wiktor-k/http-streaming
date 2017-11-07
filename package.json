@@ -1,0 +1,31 @@
+{
+  "name": "http-streaming",
+  "version": "1.0.4",
+  "description": "Streams files over HTTP using continous ranged requests",
+  "main": "dist/index",
+  "typings": "dist/index",
+  "scripts": {
+    "prepublishOnly": "npm run compile",
+    "compile": "npm run clean && tsc -p .",
+    "watch": "tsc -w -p .",
+    "clean": "rm -rf dist"
+  },
+  "bugs": {
+    "url": "https://github.com/wiktor-k/http-streaming/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wiktor-k/http-streaming"
+  },
+  "bin": "./dist/index.js",
+  "keywords": ["http", "streaming"],
+  "author": "Wiktor Kwapisiewicz <wiktor@metacode.biz>",
+  "license": "APL",
+  "devDependencies": {
+    "@types/node": "^8.0.49"
+  },
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ]
+}
